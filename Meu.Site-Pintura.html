@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pintura</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    padding: 16px;
+    background-color: #85fa85;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px;
+    gap: 20px;
+}
+
+/* Conteúdo principal */
+.principal {
+    flex: 3;
+    padding: 15px;
+    background-color: #b5fcb5;
+    border-radius: 10px;
+}
+
+/* Sidebar (lado direito) */
+.sidebar {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    height: fit-content;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Textos */
+.titulo {
+    text-align: center;
+    font-weight: 600;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Imagens */
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-info {
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #00bcd4;
+}
+
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="cabecalho">
+    <strong>Pinturas Famosas 🎨</strong> 
+    
+</div>
+
+<div class="container">
+
+    <div class="principal">
+        <h1 class="titulo">Principais Obras da História</h1>
+
+        <p>
+              A pintura é uma forma de arte que atravessa séculos, refletindo culturas e emoções.
+            Por meio de cores e técnicas, os artistas expressam ideias e sentimentos.
+            Além disso, ela preserva histórias e continua sendo muito admirada no mundo.
+
+           </p>
+
+
+                <h2><ol> 1. A Noite Estrelada -  Vincent Van Gogh</ol></h2>
+            <img src="IMAGENS/noite-estrelada.jpg" style="margin-top:10px; height:500px ;">
+            <p> A A Noite Estrelada, também chamada de <b>The Starry Night</b>, é uma obra de Vincent van Gogh que retrata um céu noturno cheio de movimento e emoção. Suas formas onduladas e cores intensas criam uma atmosfera quase sonhadora. A pintura expressa os sentimentos do artista e sua visão subjetiva da realidade. Considerada uma das obras mais famosas da arte, continua inspirando interpretações e estudos até hoje.</p>
+            <br>
+
+               <h2> <ol> 2. Mona Lisa - Leonardo Da Vinci</ol> </h2>
+            <img src="IMAGENS/monalisa.webp" style=" margin-top:10px; height:600px ;">
+            <p> A Mona Lisa, também chamada de <b>A Gioconda</b>, é uma obra de Leonardo da Vinci que retrata uma mulher com um sorriso enigmático. Sua expressão misteriosa desperta diferentes interpretações sobre seus sentimentos. Considerada uma das pinturas mais famosas do mundo, a obra inspira estudos e releituras até hoje.</p>
+              <br>
+
+                <h2> <ol> 3. Abaporu - Tarsila do Amaral</ol></h2>
+            <img src="IMAGENS/abaporu-cke.webp" style="margin-top:10px; height:600px ;">
+            <p> Abaporu, de Tarsila do Amaral, inspirou a teoria antropofágica de Oswald de Andrade, que valorizava uma arte brasileira com influências europeias. A obra destaca formas exageradas e elementos tropicais.</p>
+            <br>
+
+
+            <h2><ol> 4. O Grito - Edvard Munch <ol></h2>
+            <img src="IMAGENS/Ogrito2.webp" style=" margin-top:10px; height:600px ;">
+           <p> O Grito, de Edvard Munch, retrata a angústia e a solidão humanas. A obra, ícone do expressionismo, ficou famosa por expressar o desespero de forma intensa e marcante.</p>
+            <br>
+
+            <h2> <ol> 5. As Meninas - Diego Velázquez</ol></h2>
+            <img src="IMAGENS/meninas.jpg" style="margin-top:10px; height:600px ;">
+            <p>As Meninas, de Diego Velázquez, retrata uma cena da corte espanhola do século XVII. Apesar de parecer simples, a obra é rica em detalhes e interpretações, sendo uma das mais importantes da história da arte.</p>
+<br>
+    </div>
+
+    <!-- AGORA CORRETO: sidebar dentro da container -->
+    <div class="sidebar">
+        <h3>🎨 Curiosidades</h3>
+        <p>• Leonardo da Vinci demorou cerca de 4 anos para pintar a Mona Lisa, mas continuou fazendo ajustes por muitos anos.</p>
+
+        <p>• A Mona Lisa está exposta no Museu do Louvre, na França, e é protegida por um vidro à prova de balas.</p>
+
+        <p>• Van Gogh pintou "A Noite Estrelada" enquanto estava internado em um hospital psiquiátrico.</p>
+
+        <p>• Edvard Munch se inspirou em um momento real de ansiedade para criar "O Grito", descrevendo um “grito atravessando a natureza”.</p>
+
+        <p>• Tarsila do Amaral pintou "Abaporu" como presente de aniversário para Oswald de Andrade.</p>
+
+        <p>• "As Meninas" inclui o próprio pintor, Diego Velázquez, dentro da pintura.</p>
+
+        <p>• Muitas obras famosas foram criticadas ou ignoradas quando foram criadas, mas hoje são consideradas obras-primas.</p>
+
+        <p>• A arte pode refletir o momento histórico, político e social em que foi criada.</p>
+
+                 <h3>👨‍🎨 Artistas Famosos</h3>
+
+        <strong>🏛️ Renascimento</strong>
+        <ul>
+            <li><strong>Leonardo da Vinci</strong> – Mestre do Renascimento.</li>
+            <li><strong>Michelangelo</strong> – Pintor da Capela Sistina.</li>
+            <li><strong>Raphael</strong> – Obras equilibradas e harmoniosas.</li>
+            <li><strong>Donatello</strong> – Importante escultor.</li>
+        </ul>
+
+        <strong>🌄 Barroco</strong>
+        <ul>
+            <li><strong>Caravaggio</strong> – Uso dramático de luz e sombra.</li>
+            <li><strong>Rembrandt</strong> – Retratos realistas.</li>
+            <li><strong>Diego Velázquez</strong> – Pintor da corte espanhola.</li>
+        </ul>
+
+        <strong>🌅 Impressionismo</strong>
+        <ul>
+            <li><strong>Claude Monet</strong> – Pintava paisagens com luz.</li>
+            <li><strong>Edgar Degas</strong> – Retratava bailarinas.</li>
+            <li><strong>Pierre-Auguste Renoir</strong> – Cenas do cotidiano.</li>
+        </ul>
+
+        <strong>🎨 Pós-Impressionismo</strong>
+        <ul>
+            <li><strong>Vincent Van Gogh</strong> – Cores intensas e estilo único.</li>
+            <li><strong>Paul Cézanne</strong> – Influenciou o cubismo.</li>
+            <li><strong>Paul Gauguin</strong> – Obras com cores exóticas.</li>
+        </ul>
+
+        <strong>🧠 Arte Moderna</strong>
+        <ul>
+            <li><strong>Pablo Picasso</strong> – Criador do cubismo.</li>
+            <li><strong>Salvador Dalí</strong> – Surrealismo.</li>
+            <li><strong>Henri Matisse</strong> – Uso de cores fortes.</li>
+        </ul>
+
+        <strong>🇧🇷 Modernismo Brasileiro</strong>
+        <ul>
+            <li><strong>Tarsila do Amaral</strong> – Destaque do modernismo brasileiro.</li>
+            <li><strong>Candido Portinari</strong> – Temas sociais brasileiros.</li>
+            <li><strong>Di Cavalcanti</strong> – Cultura urbana brasileira.</li>
+            <li><strong>Anita Malfatti</strong> – Pioneira do modernismo.</li>
+        </ul>
+
+        <strong>🌍 Contemporâneos</strong>
+        <ul>
+            <li><strong>Frida Kahlo</strong> – Obras emocionais.</li>
+            <li><strong>Banksy</strong> – Arte de rua crítica.</li>
+            <li><strong>Andy Warhol</strong> – Pop Art.</li>
+            <li><strong>Jean-Michel Basquiat</strong> – Arte urbana contemporânea.</li>
+        </ul>
+
+            <h3>🖼️ Sobre a Arte</h3>
+
+        <p>A arte é uma forma de expressão que acompanha a humanidade desde a pré-história, sendo usada para comunicar ideias, emoções e crenças.</p>
+
+        <p>Ela pode se manifestar de diversas formas, como pintura, escultura, música, dança e arquitetura.</p>
+
+        <p>Cada obra de arte reflete o contexto histórico, cultural e social em que foi criada, funcionando como um registro do seu tempo.</p>
+
+        <p>Além disso, a arte permite diferentes interpretações, fazendo com que cada pessoa tenha uma experiência única ao observá-la.</p>
+
+        <p>Movimentos artísticos, como o Renascimento, Expressionismo e Modernismo, mostram como a arte evolui ao longo dos anos.</p>
+
+        <p>Hoje, a arte continua sendo uma importante forma de comunicação e expressão no mundo moderno.</p>
+    </div>
+
+</div>
+
+     <footer>
+        <div class="footer-info">
+            <p>Endereço | Redes Sociais</p>
+            <p>&copy; 2026 Meu Site | Kauani</p>
+        </div>
+
+         <nav class="footer-links">
+            <ul>
+                <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
